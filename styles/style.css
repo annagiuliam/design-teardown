@@ -47,3 +47,83 @@ body {
     padding-top: 6px;
     background-color: lightgrey;
 }
+
+#headline-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5px;
+    width: 1428px;
+    margin: 0 auto;
+}
+
+.articles-wrapper {
+    width: 85%;
+    height: 819px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.author-pic {
+    height: 176px;
+    width: 176px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+
+.article-header {
+    display: flex;
+}
+
+.article-details {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.article-details h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+article {
+    background-color: lightgrey;
+    padding: 15px;
+}
+
+#main-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+
+.newsletter-wrapper {
+    background-color: black;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    padding-top: 125px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.action-img-wrapper {
+    position: absolute;
+    top: -125px;
+    z-index: 1;
+    height: 250px;
+    width: 250px;
+}
+
+
+
