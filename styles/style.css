@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+:root {
+    --dark-grey: #8f8f8f;
+}
+
 body {
     height: 100%;
     width: 100% ;
@@ -14,7 +18,7 @@ body {
 }
 
 #main-header {
-    background-color: black;
+    background-color: var(--dark-grey);
     width: 100%;
     height: 100%;
     padding: 16px 42px;
@@ -66,7 +70,7 @@ body {
 .author-pic {
     height: 176px;
     width: 176px;
-    background-color: red;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -97,13 +101,13 @@ article {
     flex-direction: column;
     justify-content: space-between;
     height: 45%;
-    background-color: black;
+    background-color: var(--dark-grey);
     padding-bottom: 30px;
 }
 
 
 .newsletter-wrapper {
-    background-color: black;
+    background-color: var(--dark-grey);
     height: 80%;
     width: 100%;
     display: flex;
@@ -123,5 +127,27 @@ article {
     width: 250px;
 }
 
+#guides-section {
+    width: 100%;
+    margin-top: 50px;
+}
+.guides-wrapper {
+    width: 1428px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 31px;
+}
 
+.card {
+    background-color: lightgrey;
+}
 
+.card-para {
+    margin-top: 20px;
+}
+
+.card-btn {
+    margin-top: 20px;
+}
