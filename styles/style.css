@@ -72,6 +72,7 @@ body {
     width: 176px;
     background-color: white;
     border-radius: 10px;
+    margin-right: 25px;
 }
 
 .article-header {
@@ -79,7 +80,7 @@ body {
 }
 
 .article-details {
-    padding-left: 25px;
+    /* padding-left: 25px; */
     padding-top: 10px;
     padding-bottom: 10px;
     /* display: flex;
@@ -106,7 +107,7 @@ article {
 }
 
 
-.newsletter-wrapper {
+.newsletter-wrapper, .card-big {
     background-color: var(--dark-grey);
     height: 80%;
     width: 100%;
@@ -117,6 +118,7 @@ article {
     padding-top: 125px;
     justify-content: flex-start;
     position: relative;
+    z-index: 1;
 }
 
 .action-img-wrapper {
@@ -127,7 +129,7 @@ article {
     width: 250px;
 }
 
-#guides-section {
+.section-wrapper {
     width: 100%;
     margin-top: 50px;
 }
@@ -152,4 +154,75 @@ article {
 
 .card-btn {
     margin-top: 20px;
+}
+
+.articles-grid {
+    width: 1428px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 100%;
+}
+.standard-article {
+    padding: 20px;
+    display: flex;
+}
+
+.author-small {
+    width: 70px;
+    height:70px;
+}
+
+.article-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-right p {
+    margin-bottom: 15px;
+}
+
+.cards-wrapper {
+    width: 1428px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.card-small {
+    height: 330px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-card-container {
+    padding: 20%;
+}
+
+.card-big {
+    /* background-color: var(--dark-grey);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    padding-top: 125px;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1; */
+    height: 100%;
 }
