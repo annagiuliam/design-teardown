@@ -142,6 +142,8 @@ article {
 
 .card {
     background-color: lightgrey;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .card-para {
