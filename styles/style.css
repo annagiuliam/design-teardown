@@ -13,7 +13,7 @@
 body {
     height: 100%;
     width: 100% ;
-    background-color : pink;
+    /* background-color : pink; */
     color: white;
 }
 
@@ -49,15 +49,21 @@ body {
     height: 72px;
     width: 100%;
     padding-top: 6px;
+    margin-bottom: 20px;
     background-color: lightgrey;
+}
+
+.centered-wrapper {
+    width: 1428px;
+    margin: 0 auto;
 }
 
 #headline-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 5px;
-    width: 1428px;
-    margin: 0 auto;
+    /* width: 1428px;
+    margin: 0 auto; */
 }
 
 .articles-wrapper {
@@ -107,18 +113,20 @@ article {
 }
 
 
-.newsletter-wrapper, .card-big {
+.newsletter-wrapper, .card-big, .family-card {
     background-color: var(--dark-grey);
     height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 125px;
     padding-top: 125px;
-    justify-content: flex-start;
+    
     position: relative;
     z-index: 1;
+    border-radius: 15px;
 }
 
 .action-img-wrapper {
@@ -132,10 +140,12 @@ article {
 .section-wrapper {
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 100px;
+    /* height: 100%; */
 }
 .guides-wrapper {
-    width: 1428px;
-    margin: 0 auto;
+    /* width: 1428px;
+    margin: 0 auto; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -157,8 +167,8 @@ article {
 }
 
 .articles-grid {
-    width: 1428px;
-    margin: 0 auto;
+    /* width: 1428px;
+    margin: 0 auto; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -184,10 +194,11 @@ article {
 }
 
 .cards-wrapper {
-    width: 1428px;
-    margin: 0 auto; 
+    /* width: 1428px;
+    margin: 0 auto;  */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .circle {
@@ -213,16 +224,29 @@ article {
 }
 
 .card-big {
-    /* background-color: var(--dark-grey);
-    height: 80%;
-    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.family-cards-header {
+    text-align: center;
+}
+
+.family-cards-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 125px;
-    padding-top: 125px;
-    justify-content: flex-start;
-    position: relative;
-    z-index: 1; */
-    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.family-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5%;
+    max-width: 30%;
+    height: 600px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    background-color: lightgrey;
+    /* max-height: 80%; */
 }
