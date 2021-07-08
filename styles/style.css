@@ -10,6 +10,7 @@
     --dark-grey: #8f8f8f;
 }
 
+
 body {
     height: 100%;
     width: 100% ;
@@ -64,10 +65,17 @@ body {
 article h2 {
     font-size: 20px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-article h1 {
-    font-size: 45px;
+h1 {
+    font-size: 32px;
+    font-family: 'Lemon', cursive;
+}
+
+p {
+    font-size: 21px;
+    line-height:35px;
 }
 .articles-wrapper {
     width: 85%;
@@ -89,9 +97,9 @@ article h1 {
 }
 
 .article-header {
-    display: flex;
-    
+    display: flex;    
     flex-wrap: wrap;
+    margin-bottom:20px;
 }
 
 .article-details {
@@ -132,6 +140,12 @@ article {
     position: relative;
     z-index: 1;
     border-radius: 15px;
+}
+
+.newsletter-wrapper {
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
 }
 
 .action-img-wrapper {
@@ -219,6 +233,7 @@ article {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .left-card-container {
@@ -228,6 +243,7 @@ article {
 .card-big {
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
 }
 
 .family-cards-header {
@@ -250,4 +266,5 @@ article {
     margin-right: 20px;
     margin-bottom: 25px;
     background-color: lightgrey;
+    text-align: center;
 }
