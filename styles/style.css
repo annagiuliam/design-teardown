@@ -13,8 +13,8 @@
 body {
     height: 100%;
     width: 100% ;
-    /* background-color : pink; */
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #main-header {
@@ -26,7 +26,6 @@ body {
     line-height: 24px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    /* column-gap: 25px; */
     align-items: center;
 }
 
@@ -44,8 +43,6 @@ body {
 }
 
 #lower-header {
-    /* display: flex;
-    justify-content: space-between; */
     height: 72px;
     width: 100%;
     padding-top: 6px;
@@ -62,16 +59,26 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 5px;
-    /* width: 1428px;
-    margin: 0 auto; */
 }
 
+article h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+article h1 {
+    font-size: 45px;
+}
 .articles-wrapper {
     width: 85%;
-    height: 819px;
+    min-height: 819px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.articles-wrapper article {
+    margin-bottom: 15px;
 }
 .author-pic {
     height: 176px;
@@ -83,15 +90,14 @@ body {
 
 .article-header {
     display: flex;
+    
+    flex-wrap: wrap;
 }
 
 .article-details {
-    /* padding-left: 25px; */
     padding-top: 10px;
     padding-bottom: 10px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    max-width: 60%;
 }
 
 .article-details h1 {
@@ -123,7 +129,6 @@ article {
     justify-content: space-evenly;
     margin-top: 125px;
     padding-top: 125px;
-    
     position: relative;
     z-index: 1;
     border-radius: 15px;
@@ -141,11 +146,8 @@ article {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 100px;
-    /* height: 100%; */
 }
 .guides-wrapper {
-    /* width: 1428px;
-    margin: 0 auto; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -167,12 +169,14 @@ article {
 }
 
 .articles-grid {
-    /* width: 1428px;
-    margin: 0 auto; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
     grid-gap: 10px;
     height: 100%;
+}
+
+.grid-article .article-details {
+    max-width: 80%;
 }
 .standard-article {
     padding: 20px;
@@ -194,8 +198,6 @@ article {
 }
 
 .cards-wrapper {
-    /* width: 1428px;
-    margin: 0 auto;  */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -248,5 +250,4 @@ article {
     margin-right: 20px;
     margin-bottom: 25px;
     background-color: lightgrey;
-    /* max-height: 80%; */
 }
